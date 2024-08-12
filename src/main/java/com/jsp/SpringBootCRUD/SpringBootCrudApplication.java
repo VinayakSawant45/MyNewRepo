@@ -12,6 +12,7 @@ public class SpringBootCrudApplication {
 	private String serverPort;
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootCrudApplication.class, args);
+		System.out.println("hiii im vinayak");
 	}
 	@PostConstruct
 	public void printProperties() {
@@ -19,11 +20,18 @@ public class SpringBootCrudApplication {
 
 		System.out.println("soni puyed code changes");
 
+
+		System.out.println("hiii this from soni puyed");
+
+
+
 		System.out.println("chakradhar changes");
 
 		System.out.println("hello everyone");
 	}
 
+		System.out.println("this is 2nd soni commit");
 
+	}
 
 }
