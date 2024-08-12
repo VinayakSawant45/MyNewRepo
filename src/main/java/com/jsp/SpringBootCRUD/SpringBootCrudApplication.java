@@ -19,13 +19,15 @@ public class SpringBootCrudApplication {
 
 		System.out.println("soni puyed code changes");
 
-<<<<<<< HEAD
+
 		System.out.println("hiii this from soni puyed");
 
 
-=======
+
 		System.out.println("chakradhar changes");
->>>>>>> 6c0a4255f03a483d76e834aa07958fcd1ba48bda
+
+		System.out.println("this is 2nd soni commit");
+
 	}
 
 
