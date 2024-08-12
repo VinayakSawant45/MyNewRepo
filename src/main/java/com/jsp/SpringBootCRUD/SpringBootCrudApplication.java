@@ -12,6 +12,7 @@ public class SpringBootCrudApplication {
 	private String serverPort;
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootCrudApplication.class, args);
+		System.out.println("hiii im vinayak");
 	}
 	@PostConstruct
 	public void printProperties() {
@@ -21,7 +22,5 @@ public class SpringBootCrudApplication {
 
 		System.out.println("chakradhar changes");
 	}
-
-
 
 }
