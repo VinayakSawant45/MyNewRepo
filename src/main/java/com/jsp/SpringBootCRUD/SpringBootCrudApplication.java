@@ -17,6 +17,13 @@ public class SpringBootCrudApplication {
 	public void printProperties() {
 		System.out.println("server port: " + serverPort);
 
-	}
 
+		System.out.println("soni puyed code changes");
+
+		System.out.println("chakradhar changes");
+
+		System.out.println("hello everyone");
+
+		System.out.println("tdit solution");
+	}
 }
