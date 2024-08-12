@@ -12,9 +12,11 @@ public class SpringBootCrudApplication {
 	private String serverPort;
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootCrudApplication.class, args);
+		System.out.println("Vinayak here");
 	}
 	@PostConstruct
 	public void printProperties() {
 		System.out.println("server port: " + serverPort);
 	}
+
 }
