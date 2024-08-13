@@ -9,6 +9,8 @@ import org.springframework.stereotype.Service;
 import com.jsp.SpringBootCRUD.Dao.StudentDao;
 import com.jsp.SpringBootCRUD.Dto.ResponseStructure;
 import com.jsp.SpringBootCRUD.Dto.Student;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class StudentService {
@@ -17,6 +19,7 @@ public class StudentService {
 	StudentDao studentDao;
 	
 //	save student
+	@Transactional
 	public ResponseStructure<Student> saveStudent(Student student){
 		ResponseStructure<Student> responseStructure = new ResponseStructure<Student>();
 		Student student1 = studentDao.saveStudent(student);
@@ -33,6 +36,7 @@ public class StudentService {
 	}
 	
 //	get student by id
+	@Transactional(propagation = Propagation.REQUIRES_NEW)
 	public ResponseStructure<Student> getStudentById(Integer id){
 		ResponseStructure<Student> responseStructure = new ResponseStructure<Student>();
 		Student student = studentDao.getStudentById(id);
